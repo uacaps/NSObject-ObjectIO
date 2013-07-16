@@ -17,7 +17,7 @@ Link to Frameworks:
 
 ## Saving your NSObjects ##
 
-Saving your NSObjects to disk can be very useful depending on the context of your application. This function works on both iOS and OSX to maintain your NSObjects and their properties at the time of save. To save an NSObject to disk, use the <code>-(BOOL)saveObjectToURL:(NSURL *)url reducedFileSize:(BOOL)reducedSize encryptionString:(NSString *)encryptionString saltString:(NSString *)saltString</code> method.
+Saving your NSObjects to disk can be very useful depending on the context of your application. This function works on both iOS and OSX to maintain your NSObjects and their properties at the time of save. To save an NSObject to disk, use the <code>-(BOOL)saveObjectToURL:reducedFileSize:password:saltString:</code> method.
 
 **Considerations:**
 * Reduced File Size: this maps the properties (value) of your NSObject to a single character key. Graphs on the reduction of file size can be seen below.
@@ -31,7 +31,7 @@ Here's some sample code for generating a salt, and saving your files to the Desk
 NSString *salt = [NSMutableData generateSalt]; //remember to save this for future reference!
 if ([MyNSObject saveObjectToURL:[NSURL URLWithString:@"/Users/USERNAME/Desktop/testEncryptedReduced.txt"]
 				reducedFileSize:YES
-			   encryptionString:@"YOUR_PASSWORD"
+			   		   password:@"YOUR_PASSWORD"
 			   		 saltString:salt]) {
 	// Success
 }
@@ -42,3 +42,19 @@ else {
 
 --------------------
 
+## Loading your NSObjects ##
+
+Loading your NSObjects back from disk is just as easy as saving. Just use the <code>-(id)objectFromURL:password:salt:</code> method. The only consideration to using this is to make sure that you alloc and init your NSObject before calling this. *If you encrypted the file, then hopefully you saved that salt somewhere safe.* An example of using this is like so:
+
+```objc
+MyNSObject *newObject = [[MyNSObject alloc] init];
+newObject = [newObject objectFromURL:[NSURL URLWithString:@"/Users/USERNAME/Desktop/testEncryptedReduced.txt"]
+					        password:@"YOUR_PASSWORD"
+					        	salt:salt];
+```
+
+--------------------
+
+## For the Future ##
+
+We added some security heavy features with regards to encryption/decryption - but as standards and best practices change, it would be fortuitious to stay on top of those areas. So, don't feel unsure if you want to add a pull-request or open an Issue to discuss the encryption methods to make sure they are cryptographically top-notch.
