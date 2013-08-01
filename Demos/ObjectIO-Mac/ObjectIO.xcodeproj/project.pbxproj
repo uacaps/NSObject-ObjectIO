@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1160CA0317A159FE00D4CD4E /* NSObject+ObjectIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160CA0217A159FE00D4CD4E /* NSObject+ObjectIO.m */; };
+		11CD5EC617AAA7B600CF3BDD /* CAPS.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CD5EC517AAA7B600CF3BDD /* CAPS.png */; };
+		400E9D3F17909BD50074B23F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400E9D3E17909BD50074B23F /* Cocoa.framework */; };
+		400E9D4917909BD50074B23F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 400E9D4717909BD50074B23F /* InfoPlist.strings */; };
+		400E9D4B17909BD50074B23F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D4A17909BD50074B23F /* main.m */; };
+		400E9D4F17909BD50074B23F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 400E9D4D17909BD50074B23F /* Credits.rtf */; };
+		400E9D5217909BD50074B23F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D5117909BD50074B23F /* AppDelegate.m */; };
+		400E9D5517909BD50074B23F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400E9D5317909BD50074B23F /* MainMenu.xib */; };
+		400E9D6017909C570074B23F /* SolarSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D5F17909C570074B23F /* SolarSystem.m */; };
+		400E9D6417909CF20074B23F /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D6317909CF20074B23F /* Planet.m */; };
+		400E9D6717909CF80074B23F /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D6617909CF80074B23F /* Asteroid.m */; };
+		400E9D6A17909D0B0074B23F /* Moon.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D6917909D0B0074B23F /* Moon.m */; };
+		400E9D6D17909D110074B23F /* Star.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D6C17909D110074B23F /* Star.m */; };
+		404F32401795926C002A74F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404F323F1795926C002A74F1 /* Security.framework */; };
+		40EE727C17943EEF006ECA2E /* libcommonCrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE727B17943EEF006ECA2E /* libcommonCrypto.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1160CA0117A159FE00D4CD4E /* NSObject+ObjectIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ObjectIO.h"; path = "../../ObjectIO/NSObject+ObjectIO.h"; sourceTree = "<group>"; };
+		1160CA0217A159FE00D4CD4E /* NSObject+ObjectIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ObjectIO.m"; path = "../../ObjectIO/NSObject+ObjectIO.m"; sourceTree = "<group>"; };
+		11CD5EC517AAA7B600CF3BDD /* CAPS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAPS.png; sourceTree = "<group>"; };
+		400E9D3B17909BD50074B23F /* ObjectIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E9D3E17909BD50074B23F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		400E9D4117909BD50074B23F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		400E9D4217909BD50074B23F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		400E9D4317909BD50074B23F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		400E9D4617909BD50074B23F /* ObjectIO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectIO-Info.plist"; sourceTree = "<group>"; };
+		400E9D4817909BD50074B23F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		400E9D4A17909BD50074B23F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		400E9D4C17909BD50074B23F /* ObjectIO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectIO-Prefix.pch"; sourceTree = "<group>"; };
+		400E9D4E17909BD50074B23F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		400E9D5017909BD50074B23F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		400E9D5117909BD50074B23F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		400E9D5417909BD50074B23F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		400E9D5E17909C570074B23F /* SolarSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolarSystem.h; sourceTree = "<group>"; };
+		400E9D5F17909C570074B23F /* SolarSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolarSystem.m; sourceTree = "<group>"; };
+		400E9D6217909CF20074B23F /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		400E9D6317909CF20074B23F /* Planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		400E9D6517909CF80074B23F /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
+		400E9D6617909CF80074B23F /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
+		400E9D6817909D0B0074B23F /* Moon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moon.h; sourceTree = "<group>"; };
+		400E9D6917909D0B0074B23F /* Moon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moon.m; sourceTree = "<group>"; };
+		400E9D6B17909D110074B23F /* Star.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Star.h; sourceTree = "<group>"; };
+		400E9D6C17909D110074B23F /* Star.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Star.m; sourceTree = "<group>"; };
+		400E9D6E17909E550074B23F /* SpaceObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceObjects.h; sourceTree = "<group>"; };
+		404F323F1795926C002A74F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		40EE727B17943EEF006ECA2E /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400E9D3817909BD50074B23F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404F32401795926C002A74F1 /* Security.framework in Frameworks */,
+				40EE727C17943EEF006ECA2E /* libcommonCrypto.dylib in Frameworks */,
+				400E9D3F17909BD50074B23F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400E9D3217909BD50074B23F = {
+			isa = PBXGroup;
+			children = (
+				404F323F1795926C002A74F1 /* Security.framework */,
+				40EE727B17943EEF006ECA2E /* libcommonCrypto.dylib */,
+				400E9D4417909BD50074B23F /* ObjectIO */,
+				400E9D3D17909BD50074B23F /* Frameworks */,
+				400E9D3C17909BD50074B23F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		400E9D3C17909BD50074B23F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				400E9D3B17909BD50074B23F /* ObjectIO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400E9D3D17909BD50074B23F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				400E9D3E17909BD50074B23F /* Cocoa.framework */,
+				400E9D4017909BD50074B23F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		400E9D4017909BD50074B23F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				400E9D4117909BD50074B23F /* AppKit.framework */,
+				400E9D4217909BD50074B23F /* CoreData.framework */,
+				400E9D4317909BD50074B23F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		400E9D4417909BD50074B23F /* ObjectIO */ = {
+			isa = PBXGroup;
+			children = (
+				1160CA0117A159FE00D4CD4E /* NSObject+ObjectIO.h */,
+				1160CA0217A159FE00D4CD4E /* NSObject+ObjectIO.m */,
+				400E9D5017909BD50074B23F /* AppDelegate.h */,
+				400E9D5117909BD50074B23F /* AppDelegate.m */,
+				400E9D6117909C7A0074B23F /* SampleObjects */,
+				400E9D5317909BD50074B23F /* MainMenu.xib */,
+				400E9D4517909BD50074B23F /* Supporting Files */,
+			);
+			path = ObjectIO;
+			sourceTree = "<group>";
+		};
+		400E9D4517909BD50074B23F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11CD5EC517AAA7B600CF3BDD /* CAPS.png */,
+				400E9D4617909BD50074B23F /* ObjectIO-Info.plist */,
+				400E9D4717909BD50074B23F /* InfoPlist.strings */,
+				400E9D4A17909BD50074B23F /* main.m */,
+				400E9D4C17909BD50074B23F /* ObjectIO-Prefix.pch */,
+				400E9D4D17909BD50074B23F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		400E9D6117909C7A0074B23F /* SampleObjects */ = {
+			isa = PBXGroup;
+			children = (
+				400E9D6E17909E550074B23F /* SpaceObjects.h */,
+				400E9D5E17909C570074B23F /* SolarSystem.h */,
+				400E9D5F17909C570074B23F /* SolarSystem.m */,
+				400E9D6B17909D110074B23F /* Star.h */,
+				400E9D6C17909D110074B23F /* Star.m */,
+				400E9D6217909CF20074B23F /* Planet.h */,
+				400E9D6317909CF20074B23F /* Planet.m */,
+				400E9D6517909CF80074B23F /* Asteroid.h */,
+				400E9D6617909CF80074B23F /* Asteroid.m */,
+				400E9D6817909D0B0074B23F /* Moon.h */,
+				400E9D6917909D0B0074B23F /* Moon.m */,
+			);
+			name = SampleObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		400E9D3A17909BD50074B23F /* ObjectIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E9D5817909BD50074B23F /* Build configuration list for PBXNativeTarget "ObjectIO" */;
+			buildPhases = (
+				400E9D3717909BD50074B23F /* Sources */,
+				400E9D3817909BD50074B23F /* Frameworks */,
+				400E9D3917909BD50074B23F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectIO;
+			productName = ObjectIO;
+			productReference = 400E9D3B17909BD50074B23F /* ObjectIO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400E9D3317909BD50074B23F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Matt York";
+			};
+			buildConfigurationList = 400E9D3617909BD50074B23F /* Build configuration list for PBXProject "ObjectIO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 400E9D3217909BD50074B23F;
+			productRefGroup = 400E9D3C17909BD50074B23F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				400E9D3A17909BD50074B23F /* ObjectIO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		400E9D3917909BD50074B23F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E9D4917909BD50074B23F /* InfoPlist.strings in Resources */,
+				400E9D4F17909BD50074B23F /* Credits.rtf in Resources */,
+				400E9D5517909BD50074B23F /* MainMenu.xib in Resources */,
+				11CD5EC617AAA7B600CF3BDD /* CAPS.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		400E9D3717909BD50074B23F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E9D4B17909BD50074B23F /* main.m in Sources */,
+				400E9D5217909BD50074B23F /* AppDelegate.m in Sources */,
+				400E9D6017909C570074B23F /* SolarSystem.m in Sources */,
+				400E9D6417909CF20074B23F /* Planet.m in Sources */,
+				400E9D6717909CF80074B23F /* Asteroid.m in Sources */,
+				400E9D6A17909D0B0074B23F /* Moon.m in Sources */,
+				400E9D6D17909D110074B23F /* Star.m in Sources */,
+				1160CA0317A159FE00D4CD4E /* NSObject+ObjectIO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		400E9D4717909BD50074B23F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				400E9D4817909BD50074B23F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		400E9D4D17909BD50074B23F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				400E9D4E17909BD50074B23F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		400E9D5317909BD50074B23F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				400E9D5417909BD50074B23F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		400E9D5617909BD50074B23F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		400E9D5717909BD50074B23F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		400E9D5917909BD50074B23F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectIO/ObjectIO-Prefix.pch";
+				INFOPLIST_FILE = "ObjectIO/ObjectIO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		400E9D5A17909BD50074B23F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectIO/ObjectIO-Prefix.pch";
+				INFOPLIST_FILE = "ObjectIO/ObjectIO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		400E9D3617909BD50074B23F /* Build configuration list for PBXProject "ObjectIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E9D5617909BD50074B23F /* Debug */,
+				400E9D5717909BD50074B23F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400E9D5817909BD50074B23F /* Build configuration list for PBXNativeTarget "ObjectIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E9D5917909BD50074B23F /* Debug */,
+				400E9D5A17909BD50074B23F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400E9D3317909BD50074B23F /* Project object */;
+}
