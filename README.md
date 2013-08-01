@@ -3,6 +3,8 @@ NSObject+ObjectIO
 
 This is a drop-in category of NSObject that allows saving and loading of your objects. This uses the [NSObject+ObjectMap](https://github.com/uacaps/NSObject-ObjectMap) base category and extends it further. AES256 encryption/decryption is included in this class as well for optionally securing your NSObjects when you save and load them.
 
+![ScreenShot](https://raw.github.com/uacaps/NSObject-ObjectIO/master/Screenshots/screen-01.png)
+
 --------------------
 
 ## Set Up ##
