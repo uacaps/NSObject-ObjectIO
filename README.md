@@ -29,16 +29,19 @@ Saving your NSObjects to disk can be very useful depending on the context of you
 Here's some sample code for generating a salt, and saving your files to the Desktop.
 
 ```objc
-NSString *salt = [NSMutableData generateSalt]; //remember to save this for future reference!
-if ([MyNSObject saveObjectToURL:[NSURL URLWithString:@"/Users/USERNAME/Desktop/testEncryptedReduced.txt"]
-				reducedFileSize:YES
-			   		   password:@"YOUR_PASSWORD"
-			   		 saltString:salt]) {
-	// Success
-}
-else {
-	// Failure
-}
+    NSString *salt = [NSMutableData generateSalt];
+    
+    NSString *fileName = @"Filename.extension";
+    
+    //Save document
+    [MyObject saveToDocumentsDirectoryWithName:fileName reducedFileSize:YES password:@"Password" salt:salt completion:^(NSError *error) {
+        if(!error){
+        	//Success
+        }
+        else {
+        	//Fail
+        }
+    }];
 ```
 
 --------------------
