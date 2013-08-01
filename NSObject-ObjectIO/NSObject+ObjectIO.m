@@ -533,7 +533,7 @@ const NSUInteger kPBKDFRounds = 10000;
 +(NSDictionary *) dictionaryMapForObject:(id)obj inputarray:(NSMutableArray **)inputarray
 {
     if (![NSObject object:object_getClassName(obj) isInArray:inputarray]) {
-        [(*inputarray) addObject:[[NSClassFromString([obj className]) alloc] init]];
+        [(*inputarray) addObject:[[NSClassFromString([obj nameOfClass]) alloc] init]];
     }
     else {
         return nil;
