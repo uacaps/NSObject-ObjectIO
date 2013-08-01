@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1160C9DC17A159B500D4CD4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160C9DB17A159B500D4CD4E /* UIKit.framework */; };
+		1160C9DE17A159B500D4CD4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160C9DD17A159B500D4CD4E /* Foundation.framework */; };
+		1160C9E017A159B500D4CD4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160C9DF17A159B500D4CD4E /* CoreGraphics.framework */; };
+		1160C9E617A159B500D4CD4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1160C9E417A159B500D4CD4E /* InfoPlist.strings */; };
+		1160C9E817A159B500D4CD4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160C9E717A159B500D4CD4E /* main.m */; };
+		1160C9EC17A159B500D4CD4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160C9EB17A159B500D4CD4E /* AppDelegate.m */; };
+		1160C9EE17A159B500D4CD4E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1160C9ED17A159B500D4CD4E /* Default.png */; };
+		1160C9F017A159B500D4CD4E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1160C9EF17A159B500D4CD4E /* Default@2x.png */; };
+		1160C9F217A159B500D4CD4E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1160C9F117A159B500D4CD4E /* Default-568h@2x.png */; };
+		1160C9F517A159B500D4CD4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160C9F417A159B500D4CD4E /* ViewController.m */; };
+		1160C9F817A159B500D4CD4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1160C9F617A159B500D4CD4E /* ViewController.xib */; };
+		11CD5EC017AAA29900CF3BDD /* SolarSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5EB717AAA29900CF3BDD /* SolarSystem.m */; };
+		11CD5EC117AAA29900CF3BDD /* Star.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5EB917AAA29900CF3BDD /* Star.m */; };
+		11CD5EC217AAA29900CF3BDD /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5EBB17AAA29900CF3BDD /* Planet.m */; };
+		11CD5EC317AAA29900CF3BDD /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5EBD17AAA29900CF3BDD /* Asteroid.m */; };
+		11CD5EC417AAA29900CF3BDD /* Moon.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5EBF17AAA29900CF3BDD /* Moon.m */; };
+		11CD5ECB17AAAFE700CF3BDD /* CAPS.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CD5ECA17AAAFE700CF3BDD /* CAPS.png */; };
+		11CD5ECF17AAB1E300CF3BDD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CD5ECE17AAB1E300CF3BDD /* Security.framework */; };
+		11CD5ED217AAB28A00CF3BDD /* NSObject+ObjectIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5ED117AAB28A00CF3BDD /* NSObject+ObjectIO.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1160C9D817A159B500D4CD4E /* ObjectIO-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectIO-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1160C9DB17A159B500D4CD4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1160C9DD17A159B500D4CD4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1160C9DF17A159B500D4CD4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1160C9E317A159B500D4CD4E /* ObjectIO-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectIO-iOS-Info.plist"; sourceTree = "<group>"; };
+		1160C9E517A159B500D4CD4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1160C9E717A159B500D4CD4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1160C9E917A159B500D4CD4E /* ObjectIO-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectIO-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		1160C9EA17A159B500D4CD4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1160C9EB17A159B500D4CD4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1160C9ED17A159B500D4CD4E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1160C9EF17A159B500D4CD4E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1160C9F117A159B500D4CD4E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1160C9F317A159B500D4CD4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1160C9F417A159B500D4CD4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1160C9F717A159B500D4CD4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		11CD5EB517AAA29900CF3BDD /* SpaceObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceObjects.h; sourceTree = "<group>"; };
+		11CD5EB617AAA29900CF3BDD /* SolarSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolarSystem.h; sourceTree = "<group>"; };
+		11CD5EB717AAA29900CF3BDD /* SolarSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolarSystem.m; sourceTree = "<group>"; };
+		11CD5EB817AAA29900CF3BDD /* Star.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Star.h; sourceTree = "<group>"; };
+		11CD5EB917AAA29900CF3BDD /* Star.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Star.m; sourceTree = "<group>"; };
+		11CD5EBA17AAA29900CF3BDD /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		11CD5EBB17AAA29900CF3BDD /* Planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		11CD5EBC17AAA29900CF3BDD /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
+		11CD5EBD17AAA29900CF3BDD /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
+		11CD5EBE17AAA29900CF3BDD /* Moon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moon.h; sourceTree = "<group>"; };
+		11CD5EBF17AAA29900CF3BDD /* Moon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moon.m; sourceTree = "<group>"; };
+		11CD5ECA17AAAFE700CF3BDD /* CAPS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAPS.png; sourceTree = "<group>"; };
+		11CD5ECC17AAB15A00CF3BDD /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		11CD5ECE17AAB1E300CF3BDD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		11CD5ED017AAB28A00CF3BDD /* NSObject+ObjectIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectIO.h"; sourceTree = "<group>"; };
+		11CD5ED117AAB28A00CF3BDD /* NSObject+ObjectIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectIO.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1160C9D517A159B500D4CD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CD5ECF17AAB1E300CF3BDD /* Security.framework in Frameworks */,
+				1160C9DC17A159B500D4CD4E /* UIKit.framework in Frameworks */,
+				1160C9DE17A159B500D4CD4E /* Foundation.framework in Frameworks */,
+				1160C9E017A159B500D4CD4E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1160C9CF17A159B500D4CD4E = {
+			isa = PBXGroup;
+			children = (
+				11CD5ECE17AAB1E300CF3BDD /* Security.framework */,
+				11CD5ECC17AAB15A00CF3BDD /* libcommonCrypto.dylib */,
+				1160C9E117A159B500D4CD4E /* ObjectIO-iOS */,
+				1160C9DA17A159B500D4CD4E /* Frameworks */,
+				1160C9D917A159B500D4CD4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1160C9D917A159B500D4CD4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1160C9D817A159B500D4CD4E /* ObjectIO-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1160C9DA17A159B500D4CD4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1160C9DB17A159B500D4CD4E /* UIKit.framework */,
+				1160C9DD17A159B500D4CD4E /* Foundation.framework */,
+				1160C9DF17A159B500D4CD4E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1160C9E117A159B500D4CD4E /* ObjectIO-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11CD5ED017AAB28A00CF3BDD /* NSObject+ObjectIO.h */,
+				11CD5ED117AAB28A00CF3BDD /* NSObject+ObjectIO.m */,
+				1160C9EA17A159B500D4CD4E /* AppDelegate.h */,
+				1160C9EB17A159B500D4CD4E /* AppDelegate.m */,
+				1160C9F317A159B500D4CD4E /* ViewController.h */,
+				1160C9F417A159B500D4CD4E /* ViewController.m */,
+				11CD5EB417AAA28300CF3BDD /* Sample Objects */,
+				1160C9F617A159B500D4CD4E /* ViewController.xib */,
+				1160C9E217A159B500D4CD4E /* Supporting Files */,
+			);
+			path = "ObjectIO-iOS";
+			sourceTree = "<group>";
+		};
+		1160C9E217A159B500D4CD4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11CD5ECA17AAAFE700CF3BDD /* CAPS.png */,
+				1160C9E317A159B500D4CD4E /* ObjectIO-iOS-Info.plist */,
+				1160C9E417A159B500D4CD4E /* InfoPlist.strings */,
+				1160C9E717A159B500D4CD4E /* main.m */,
+				1160C9E917A159B500D4CD4E /* ObjectIO-iOS-Prefix.pch */,
+				1160C9ED17A159B500D4CD4E /* Default.png */,
+				1160C9EF17A159B500D4CD4E /* Default@2x.png */,
+				1160C9F117A159B500D4CD4E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11CD5EB417AAA28300CF3BDD /* Sample Objects */ = {
+			isa = PBXGroup;
+			children = (
+				11CD5EB517AAA29900CF3BDD /* SpaceObjects.h */,
+				11CD5EB617AAA29900CF3BDD /* SolarSystem.h */,
+				11CD5EB717AAA29900CF3BDD /* SolarSystem.m */,
+				11CD5EB817AAA29900CF3BDD /* Star.h */,
+				11CD5EB917AAA29900CF3BDD /* Star.m */,
+				11CD5EBA17AAA29900CF3BDD /* Planet.h */,
+				11CD5EBB17AAA29900CF3BDD /* Planet.m */,
+				11CD5EBC17AAA29900CF3BDD /* Asteroid.h */,
+				11CD5EBD17AAA29900CF3BDD /* Asteroid.m */,
+				11CD5EBE17AAA29900CF3BDD /* Moon.h */,
+				11CD5EBF17AAA29900CF3BDD /* Moon.m */,
+			);
+			name = "Sample Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1160C9D717A159B500D4CD4E /* ObjectIO-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1160C9FE17A159B500D4CD4E /* Build configuration list for PBXNativeTarget "ObjectIO-iOS" */;
+			buildPhases = (
+				1160C9D417A159B500D4CD4E /* Sources */,
+				1160C9D517A159B500D4CD4E /* Frameworks */,
+				1160C9D617A159B500D4CD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjectIO-iOS";
+			productName = "ObjectIO-iOS";
+			productReference = 1160C9D817A159B500D4CD4E /* ObjectIO-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1160C9D017A159B500D4CD4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Matthew York";
+			};
+			buildConfigurationList = 1160C9D317A159B500D4CD4E /* Build configuration list for PBXProject "ObjectIO-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1160C9CF17A159B500D4CD4E;
+			productRefGroup = 1160C9D917A159B500D4CD4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1160C9D717A159B500D4CD4E /* ObjectIO-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1160C9D617A159B500D4CD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1160C9E617A159B500D4CD4E /* InfoPlist.strings in Resources */,
+				1160C9EE17A159B500D4CD4E /* Default.png in Resources */,
+				1160C9F017A159B500D4CD4E /* Default@2x.png in Resources */,
+				1160C9F217A159B500D4CD4E /* Default-568h@2x.png in Resources */,
+				1160C9F817A159B500D4CD4E /* ViewController.xib in Resources */,
+				11CD5ECB17AAAFE700CF3BDD /* CAPS.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1160C9D417A159B500D4CD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1160C9E817A159B500D4CD4E /* main.m in Sources */,
+				1160C9EC17A159B500D4CD4E /* AppDelegate.m in Sources */,
+				1160C9F517A159B500D4CD4E /* ViewController.m in Sources */,
+				11CD5EC017AAA29900CF3BDD /* SolarSystem.m in Sources */,
+				11CD5EC117AAA29900CF3BDD /* Star.m in Sources */,
+				11CD5EC217AAA29900CF3BDD /* Planet.m in Sources */,
+				11CD5EC317AAA29900CF3BDD /* Asteroid.m in Sources */,
+				11CD5EC417AAA29900CF3BDD /* Moon.m in Sources */,
+				11CD5ED217AAB28A00CF3BDD /* NSObject+ObjectIO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1160C9E417A159B500D4CD4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1160C9E517A159B500D4CD4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1160C9F617A159B500D4CD4E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1160C9F717A159B500D4CD4E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1160C9FC17A159B500D4CD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1160C9FD17A159B500D4CD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1160C9FF17A159B500D4CD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectIO-iOS/ObjectIO-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ObjectIO-iOS/ObjectIO-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1160CA0017A159B500D4CD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectIO-iOS/ObjectIO-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ObjectIO-iOS/ObjectIO-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1160C9D317A159B500D4CD4E /* Build configuration list for PBXProject "ObjectIO-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1160C9FC17A159B500D4CD4E /* Debug */,
+				1160C9FD17A159B500D4CD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1160C9FE17A159B500D4CD4E /* Build configuration list for PBXNativeTarget "ObjectIO-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1160C9FF17A159B500D4CD4E /* Debug */,
+				1160CA0017A159B500D4CD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1160C9D017A159B500D4CD4E /* Project object */;
+}
