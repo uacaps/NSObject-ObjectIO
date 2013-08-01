@@ -56,11 +56,11 @@ __block MyNSObject *newObject = [[MyNSObject alloc] init];
 [newObject loadFromDocumentsDirectoryWithName:fileName password:@"Password" salt:salt completion:^(id object, NSError *error) {
 	if(!error){
 		//Assign object
-            	newObject = (MyObject *)object;
+		newObject = (MyObject *)object;
         }
         else {
-            //Fail
-        
+		//Fail
+        }
 }];
 ```
 
