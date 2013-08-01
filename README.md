@@ -29,19 +29,19 @@ Saving your NSObjects to disk can be very useful depending on the context of you
 Here's some sample code for generating a salt, and saving your files to the Desktop.
 
 ```objc
-    NSString *salt = [NSMutableData generateSalt];
+NSString *salt = [NSMutableData generateSalt];
     
-    NSString *fileName = @"Filename.extension";
+NSString *fileName = @"Filename.extension";
     
-    //Save document
-    [MyObject saveToDocumentsDirectoryWithName:fileName reducedFileSize:YES password:@"Password" salt:salt completion:^(NSError *error) {
-        if(!error){
+//Save document
+[MyObject saveToDocumentsDirectoryWithName:fileName reducedFileSize:YES password:@"Password" salt:salt completion:^(NSError *error) {
+	if(!error){
         	//Success
         }
         else {
         	//Fail
         }
-    }];
+}];
 ```
 
 --------------------
@@ -51,18 +51,17 @@ Here's some sample code for generating a salt, and saving your files to the Desk
 Loading your NSObjects back from disk is just as easy as saving. Just use the <code>-(id)objectFromURL:password:salt:</code> method. The only consideration to using this is to make sure that you alloc and init your NSObject before calling this. *If you encrypted the file, then hopefully you saved that salt somewhere safe.* An example of using this is like so:
 
 ```objc
-	__block MyNSObject *newObject = [[MyNSObject alloc] init];
+__block MyNSObject *newObject = [[MyNSObject alloc] init];
 					        	
-	[newObject loadFromDocumentsDirectoryWithName:fileName password:@"Password" salt:salt completion:^(id object, NSError *error) {
-            
-            if(!error){
-            	//Assign object
+[newObject loadFromDocumentsDirectoryWithName:fileName password:@"Password" salt:salt completion:^(id object, NSError *error) {
+	if(!error){
+		//Assign object
             	newObject = (MyObject *)object;
-            }
-            else {
-            
-            }
-        }];
+        }
+        else {
+            //Fail
+        
+}];
 ```
 
 --------------------
