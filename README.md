@@ -3,8 +3,6 @@ NSObject+ObjectIO
 
 This is a drop-in category of NSObject that allows saving and loading of your objects. This uses the [NSObject+ObjectMap](https://github.com/uacaps/NSObject-ObjectMap) base category and extends it further. AES256 encryption/decryption is included in this class as well for optionally securing your NSObjects when you save and load them.
 
-![ScreenShot](https://raw.github.com/uacaps/NSObject-ObjectIO/master/Screenshots/screen-01.png)
-
 --------------------
 
 ## Set Up ##
@@ -53,10 +51,18 @@ Here's some sample code for generating a salt, and saving your files to the Desk
 Loading your NSObjects back from disk is just as easy as saving. Just use the <code>-(id)objectFromURL:password:salt:</code> method. The only consideration to using this is to make sure that you alloc and init your NSObject before calling this. *If you encrypted the file, then hopefully you saved that salt somewhere safe.* An example of using this is like so:
 
 ```objc
-MyNSObject *newObject = [[MyNSObject alloc] init];
-newObject = [newObject objectFromURL:[NSURL URLWithString:@"/Users/USERNAME/Desktop/testEncryptedReduced.txt"]
-					        password:@"YOUR_PASSWORD"
-					        	salt:salt];
+	__block MyNSObject *newObject = [[MyNSObject alloc] init];
+					        	
+	[newObject loadFromDocumentsDirectoryWithName:fileName password:@"Password" salt:salt completion:^(id object, NSError *error) {
+            
+            if(!error){
+            	//Assign object
+            	newObject = (MyObject *)object;
+            }
+            else {
+            
+            }
+        }];
 ```
 
 --------------------
