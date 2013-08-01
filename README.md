@@ -20,7 +20,7 @@ Link to Frameworks:
 
 ## Saving your NSObjects ##
 
-Saving your NSObjects to disk can be very useful depending on the context of your application. This function works on both iOS and OSX to maintain your NSObjects and their properties at the time of save. To save an NSObject to disk, use the <code>-(BOOL)saveObjectToURL:reducedFileSize:password:saltString:</code> method.
+Saving your NSObjects to disk can be very useful depending on the context of your application. This function works on both iOS and OSX to maintain your NSObjects and their properties at the time of save. To save an NSObject to disk, use the <code>-(void)saveToUrl:completion:</code> method.
 
 **Considerations:**
 * Reduced File Size: this maps the properties (value) of your NSObject to a single character key. Graphs on the reduction of file size can be seen below.
