@@ -12,6 +12,7 @@ Drag the included <code>NSObject+ObjectIO.{h,m}</code> classes into your project
 Link to Frameworks:
 
 * Security
+* CommonCrypto
 
 --------------------
 
