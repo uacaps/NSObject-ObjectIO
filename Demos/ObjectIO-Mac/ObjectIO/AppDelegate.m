@@ -43,9 +43,11 @@
     SolarSystem *testSolarSystem = [SolarSystem ourSolarSystem];
     
     //Test save and load with encryption and reduced file size
+    //Saves to your documents folder
     [self saveAndLoadEncryptedSolarSystem:testSolarSystem];
     
     //Test save and load without encryption or reduced file size
+    //Saves to your desktop
     [self saveAndLoadSolarSystem:testSolarSystem];
 }
 

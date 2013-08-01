@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1160CA0317A159FE00D4CD4E /* NSObject+ObjectIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160CA0217A159FE00D4CD4E /* NSObject+ObjectIO.m */; };
 		11CD5EC617AAA7B600CF3BDD /* CAPS.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CD5EC517AAA7B600CF3BDD /* CAPS.png */; };
+		11CD5EC917AAAC9D00CF3BDD /* NSObject+ObjectIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD5EC817AAAC9D00CF3BDD /* NSObject+ObjectIO.m */; };
 		400E9D3F17909BD50074B23F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400E9D3E17909BD50074B23F /* Cocoa.framework */; };
 		400E9D4917909BD50074B23F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 400E9D4717909BD50074B23F /* InfoPlist.strings */; };
 		400E9D4B17909BD50074B23F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E9D4A17909BD50074B23F /* main.m */; };
@@ -25,9 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1160CA0117A159FE00D4CD4E /* NSObject+ObjectIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ObjectIO.h"; path = "../../ObjectIO/NSObject+ObjectIO.h"; sourceTree = "<group>"; };
-		1160CA0217A159FE00D4CD4E /* NSObject+ObjectIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ObjectIO.m"; path = "../../ObjectIO/NSObject+ObjectIO.m"; sourceTree = "<group>"; };
 		11CD5EC517AAA7B600CF3BDD /* CAPS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAPS.png; sourceTree = "<group>"; };
+		11CD5EC717AAAC9D00CF3BDD /* NSObject+ObjectIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectIO.h"; sourceTree = "<group>"; };
+		11CD5EC817AAAC9D00CF3BDD /* NSObject+ObjectIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectIO.m"; sourceTree = "<group>"; };
 		400E9D3B17909BD50074B23F /* ObjectIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		400E9D3E17909BD50074B23F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		400E9D4117909BD50074B23F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -111,8 +111,8 @@
 		400E9D4417909BD50074B23F /* ObjectIO */ = {
 			isa = PBXGroup;
 			children = (
-				1160CA0117A159FE00D4CD4E /* NSObject+ObjectIO.h */,
-				1160CA0217A159FE00D4CD4E /* NSObject+ObjectIO.m */,
+				11CD5EC717AAAC9D00CF3BDD /* NSObject+ObjectIO.h */,
+				11CD5EC817AAAC9D00CF3BDD /* NSObject+ObjectIO.m */,
 				400E9D5017909BD50074B23F /* AppDelegate.h */,
 				400E9D5117909BD50074B23F /* AppDelegate.m */,
 				400E9D6117909C7A0074B23F /* SampleObjects */,
@@ -225,7 +225,7 @@
 				400E9D6717909CF80074B23F /* Asteroid.m in Sources */,
 				400E9D6A17909D0B0074B23F /* Moon.m in Sources */,
 				400E9D6D17909D110074B23F /* Star.m in Sources */,
-				1160CA0317A159FE00D4CD4E /* NSObject+ObjectIO.m in Sources */,
+				11CD5EC917AAAC9D00CF3BDD /* NSObject+ObjectIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
