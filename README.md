@@ -75,6 +75,13 @@ __block MyNSObject *newObject = [[MyNSObject alloc] init];
 We added some security heavy features with regards to encryption/decryption - but as standards and best practices change, it would be fortuitious to stay on top of those areas. So, don't feel unsure if you want to add a pull-request or open an Issue to discuss the encryption methods to make sure they are cryptographically top-notch.
 
 --------------------
+## Cocoapods ##
+
+Cocoapods is a dependency manager for Objective-C code, and is wonderful for setting up your projects from the start and maintaing them through different versions. When NSObject+ObjectIO.{h,m} updates, you can always get the newest version by changing your podspec file to include the following line to make sure your project stays up to date:
+
+<code>pod 'NSObject-ObjectIO', '~> 1.0.0'</code>
+
+--------------------
 ## License ##
 
 Copyright (c) 2012 The Board of Trustees of The University of Alabama
